@@ -1,0 +1,29 @@
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+body {
+    font-family: "Calibri";
+    font-size: 30px;
+    padding-left: 40px;
+}
+ul {
+    list-style: none;
+}
+[mytitle] {
+    cursor: pointer;
+}
+[mytitle]:after {
+    content: '';
+    transition: 0.2s;
+}
+[mytitle]:hover::after {
+    width: 550px;
+    display: block;
+    content: attr(mytitle);
+    background-color: rgb(134, 96, 96);
+    padding: 10px;
+    z-index: 100;
+}
+
